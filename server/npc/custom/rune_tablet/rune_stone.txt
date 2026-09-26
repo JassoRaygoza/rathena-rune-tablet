@@ -1,0 +1,21 @@
+//===== rAthena Script =======================================
+//= Rune Stone NPCs (Rune Tablet)
+//===== Description: =========================================
+//= Official access point: "Rune Tablet functions are only available through
+//= the Rune Stone NPC" (kRO EP21 rune tablet notice, update seq 297).
+//= Locations from that notice. Who may open it is controlled by
+//= rune_tablet_min_group_level in conf/battle/feature.conf.
+//============================================================
+
+-	script	Rune Stone::RuneStone	4_RUNESTONE,{
+	runetablet;
+	end;
+}
+
+prontera,161,192,4	duplicate(RuneStone)	Rune Stone#prt	4_RUNESTONE
+yuno,142,177,4	duplicate(RuneStone)	Rune Stone#yuno	4_RUNESTONE
+rachel,131,144,4	duplicate(RuneStone)	Rune Stone#rachel	4_RUNESTONE
+icecastle,71,230,4	duplicate(RuneStone)	Rune Stone#ice	4_RUNESTONE
+ba_maison,137,111,4	duplicate(RuneStone)	Rune Stone#bam	4_RUNESTONE
+payon,180,110,4	duplicate(RuneStone)	Rune Stone#payon	4_RUNESTONE
+ygg_edge,209,203,4	duplicate(RuneStone)	Rune Stone#ygg	4_RUNESTONE

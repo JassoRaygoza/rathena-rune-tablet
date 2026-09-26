@@ -1,0 +1,31 @@
+# Cards listed in db/re/rune_tablet_decomposition.yml but absent from every item DB
+# (the decomposition loader skipped them with an error). Data from divine-pride.net:
+#   https://www.divine-pride.net/database/item/27266
+#   https://www.divine-pride.net/database/item/300483
+Header:
+  Type: ITEM_DB
+  Version: 3
+
+Body:
+  - Id: 27266
+    AegisName: Hunter_Fly_Card_Z
+    Name: Hunter Fly Card    # Zero-server variant of 4115, published by GZero/kROZ/twROZ
+    Type: Card
+    Weight: 10
+    Locations:
+      Right_Hand: true
+    Flags:
+      DropEffect: CLIENT
+    Script: |
+      // "Physical attacks have a 5% chance to restore 100 HP every second for 5 seconds."
+      autobonus "{ bonus2 bHPRegenRate,100,1000; }",50,5000,BF_WEAPON;
+  - Id: 300483
+    AegisName: R_Recycle_Card2
+    Name: Mid-grade Rune Card
+    Type: Card
+    Locations:
+      Head_Top: true
+      Head_Mid: true
+      Head_Low: true
+    Flags:
+      DropEffect: CLIENT
